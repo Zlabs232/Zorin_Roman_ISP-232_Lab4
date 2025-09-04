@@ -29,6 +29,33 @@
             Console.WriteLine(nums5[nums5.Length - 2]);
             Console.WriteLine(nums5[nums5.Length - 3]); //Пример выбора элементов с конца массива 
 
+            Console.WriteLine(nums5[^1]);
+            Console.WriteLine(nums5[^2]);
+            Console.WriteLine(nums5[^3]); //Выбор элементов с конца
+
+            foreach(int i in nums5)
+            {
+                Console.WriteLine(i);
+            } //Перебор с помощью цикла foreach
+
+            for(int i = 0; i < nums5.Length; i++)
+            {
+                Console.WriteLine(nums5[i]);
+            }//Перебор с помощью цикла for
+
+            for (int i = 0; i < nums5.Length; i++)
+            {
+                nums5[i] = nums5[i] * 2;
+                Console.WriteLine(nums5[i]);
+            }//Пример более лучшей гибкости цикла for по сравнению с foreach
+
+            int j = 0;
+            while (j < nums5.Length)
+            {
+                Console.WriteLine(nums5[j]);
+                j++;
+            }// Перебор массива с помощью while
+
         }
     }
 }
