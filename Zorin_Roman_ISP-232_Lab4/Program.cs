@@ -14,9 +14,20 @@
             int[] nums6 = [1, 2, 3, 5];
 
             Console.WriteLine(nums5[3]);
-            var n = nums6[0];
+            var n = nums5[0];
             Console.WriteLine(n); //Пример индексация
 
+            nums5[1] = 505;
+            Console.WriteLine(nums5[1]); // Замена элеммента 
+
+            //int[] nums6 = [1, 2, 3, 5];
+            // Console.WriteLine(nums5[6]); // Ошибка при обращении к несуществ. переменной
+            
+            Console.WriteLine(nums5.Length); //Длина массива
+
+            Console.WriteLine(nums5[nums5.Length - 1]);
+            Console.WriteLine(nums5[nums5.Length - 2]);
+            Console.WriteLine(nums5[nums5.Length - 3]); //Пример выбора элементов с конца массива 
 
         }
     }
