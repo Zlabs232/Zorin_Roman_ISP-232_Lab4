@@ -45,11 +45,11 @@
                 Console.WriteLine(nums5[i]);
             }//Пример более лучшей гибкости цикла for по сравнению с foreach
 
-            int j = 0;
-            while (j < nums5.Length)
+            int g = 0;
+            while (g < nums5.Length)
             {
-                Console.WriteLine(nums5[j]);
-                j++;
+                Console.WriteLine(nums5[g]);
+                g++;
             }// Перебор массива с помощью while
 
             int[] nums1 = [0, 1, 2, 3, 4, 5];
@@ -90,6 +90,30 @@
             {
                 Console.Write($"{i} \t");
             }
+
+            int[] nums = [54, 7, -41, 2, 4, 2, 89, 33, -5, 12];
+            int temper;
+
+            for (int i = 0; i < nums.Length - 1; i++)
+            {
+                for (int j = i + 1; j < nums.Length; j++)
+                {
+                    if (nums[i] > nums[j]) 
+                    {
+                        temper = nums[i];
+                        nums[i] = nums[j];
+                        nums[j] = temper;
+                    }
+                }
+            }
+
+            Console.WriteLine("\nМассив после сортировки: ");
+            for (int i = 0; i < nums.Length; i++)
+            {
+                Console.WriteLine(nums[i]);
+            }
+
+
 
         }
     }
