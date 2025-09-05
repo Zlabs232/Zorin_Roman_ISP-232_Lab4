@@ -7,11 +7,7 @@
             int[] empty_m; //Пустой массив
             int[] empty_m2 = new int[4];  //Присвоение значения массиву 
 
-            int[] nums2 = new int[4] { 1, 2, 3, 5 };
-            int[] nums3 = new int[] { 1, 2, 3, 5 };
-            int[] nums4 = new[] { 1, 2, 3, 5 };
             int[] nums5 = { 1, 2, 3, 5 };
-            int[] nums6 = [1, 2, 3, 5];
 
             Console.WriteLine(nums5[3]);
             var n = nums5[0];
@@ -55,6 +51,16 @@
                 Console.WriteLine(nums5[j]);
                 j++;
             }// Перебор массива с помощью while
+
+            int[] nums1 = [0, 1, 2, 3, 4, 5];
+            int[,] nums2 = { { 0, 1, 2 }, { 3, 4, 5 } };//Пример многомерного массива
+
+            object[] students = ["Иван", "Игорь", 4, 4.6, 'c']; //Более предпочтительный выбор
+            dynamic[] students2 = ["Иван", "Игорь", 4, 4.6, 'c'];
+            students2[4] = 4;
+            Console.WriteLine(students[4].GetType());
+            Console.WriteLine(students2[4].GetType());
+
 
         }
     }
