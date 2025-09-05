@@ -113,6 +113,16 @@
                 Console.WriteLine(nums[i]);
             }
 
+            //List<string> people = new List<string>();
+            //List<string> people = [];
+            //List<string> people = new List<string>()
+            //{ "Иван", "Игорь", "Аллександр"};
+
+            List<string> people = ["Иван", "Игорь", "Аллександр"];
+            var yourStudebt = new List<string>(people); //Пример инициализации коллекции элементами из другой коллекции 
+
+            //List<string> people = new List<string>(10);
+            //List<string> people = new(10);
 
 
         }
