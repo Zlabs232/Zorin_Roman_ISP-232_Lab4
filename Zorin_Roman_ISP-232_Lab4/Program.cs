@@ -205,6 +205,22 @@ namespace Lab4
             }
             Console.WriteLine($"Среднее кол-во очков: {(double)sum / findAvg.Length}");
 
+            //Task 8 
+            List<string> inventory = ["Меч", "Ласточка", "Бомба", "Зелье Гром", "Ласточка"];
+
+            for (int i = 0; i < inventory.Count; i++)
+            {
+                if (inventory[i] == "Ласточка")
+                {
+                    inventory[i] = "Кошка";
+                }
+            }
+
+            Console.WriteLine("Инвентарь после замены:");
+            foreach (var item in inventory)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
