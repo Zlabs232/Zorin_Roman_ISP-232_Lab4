@@ -167,6 +167,15 @@ namespace Lab4
             }
             Console.WriteLine(max);
 
+            //Task 4
+
+            int[] some = [1, 2, 3, 4, 5];
+            int even = 0;
+            int odd = 0;
+            for (int i = 0; i < some.Length; i++)
+                _ = some[i] % 2 == 0 ? even++ : odd++;
+
+            Console.WriteLine($"Кол-во четных: {even}, Кол-во нечетных: {odd}");
 
 
 
