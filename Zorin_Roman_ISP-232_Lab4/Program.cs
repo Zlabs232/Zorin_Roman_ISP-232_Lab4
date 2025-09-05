@@ -185,6 +185,16 @@ namespace Lab4
                     min = findMin[i];
             }
             Console.WriteLine(min);
+
+            //Task 6
+            string[] resul = ["win", "loss", "win", "win", "loss"];
+            int win = 0;
+            int loss = 0;
+            for(int i = 0; i<resul.Length; i++)
+            {
+                _ = resul[i] == "win" ? win++ : loss++;
+            }
+            Console.WriteLine($"Кол-во побед: {win}, Кол-во поражений: {loss}");
         }
     }
 }
