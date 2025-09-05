@@ -195,6 +195,16 @@ namespace Lab4
                 _ = resul[i] == "win" ? win++ : loss++;
             }
             Console.WriteLine($"Кол-во побед: {win}, Кол-во поражений: {loss}");
+
+            //Task 7
+            int[] findAvg = [15, 20, 25, 30, 10];
+            int sum2 = 0;
+            for(int i = 0; i < findAvg.Length; i++)
+            {
+                sum2 += findAvg[i];
+            }
+            Console.WriteLine($"Среднее кол-во очков: {(double)sum / findAvg.Length}");
+
         }
     }
 }
