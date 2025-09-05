@@ -124,6 +124,13 @@
             //List<string> people = new List<string>(10);
             //List<string> people = new(10);
 
+            List<string> studetnt = ["Билли", "Игорь", "Степан"];
+            string firstStudent = studetnt[0];
+            Console.WriteLine(firstStudent);
+            studetnt[0] = "Богдан";
+            Console.WriteLine(studetnt[0]);
+
+
 
         }
     }
