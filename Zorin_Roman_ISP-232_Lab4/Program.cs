@@ -157,6 +157,16 @@ namespace Lab4
                 sum += points[i];
             Console.WriteLine(sum);
 
+            //Task 3
+            int[] findMax = [1, 3, 7, 2, 5];
+            int max = 0;
+            for(int i = 0; i < findMax.Length; i++)
+            {
+                if(findMax[i] > max)
+                    max = findMax[i];
+            }
+            Console.WriteLine(max);
+
 
 
 
