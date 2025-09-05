@@ -1,4 +1,6 @@
-﻿namespace Lab4
+﻿using System.Runtime.CompilerServices;
+
+namespace Lab4
 {
     class Lab4
     {
@@ -129,6 +131,25 @@
             Console.WriteLine(firstStudent);
             studetnt[0] = "Богдан";
             Console.WriteLine(studetnt[0]);
+
+            Console.WriteLine(studetnt.Count);
+
+            foreach(var std in studetnt)
+                Console.WriteLine(std);
+
+            studetnt.Add("Van");
+            studetnt.AddRange(["Антон", "Денис"]);
+            studetnt.Insert(1, "Кирилл");
+            studetnt.InsertRange(1, ["Mike", "Kate"]);
+            studetnt.Insert(7, "Михаил");
+            studetnt.RemoveAt(1);
+            studetnt.Remove("Михаил");
+            studetnt.RemoveRange(1, 2);
+            studetnt.Clear();
+
+
+
+
 
 
 
