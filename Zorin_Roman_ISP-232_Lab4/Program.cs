@@ -150,7 +150,12 @@ namespace Lab4
             //Task 1
             string[] weapons = { "sword", "shield", "potion", "sword", "potion", "potion" };
 
-
+            //Task 2
+            int[] points = [10, 20, 15, 30, 25];
+            int sum = 0;
+            for(int i = 0; i < points.Length; i++)
+                sum += points[i];
+            Console.WriteLine(sum);
 
 
 
