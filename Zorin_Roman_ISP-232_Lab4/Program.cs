@@ -147,6 +147,9 @@ namespace Lab4
             studetnt.RemoveRange(1, 2);
             studetnt.Clear();
 
+            //Task 1
+            string[] weapons = { "sword", "shield", "potion", "sword", "potion", "potion" };
+
 
 
 
