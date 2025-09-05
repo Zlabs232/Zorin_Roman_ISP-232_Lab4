@@ -221,6 +221,15 @@ namespace Lab4
             {
                 Console.WriteLine(item);
             }
+
+            //Task 9
+            List<string> companions = ["Garrus", "Tali", "Mordin", "Grunt", "Jack"];
+            List<string> roles = ["Лидер команды", "Техник", "Биотик", "Солдат", "Поддержка"];
+
+            for (int i = 0; i < companions.Count && i < roles.Count; i++)
+            {
+                Console.WriteLine($"{roles[i]}: {companions[i]}");
+            }
         }
     }
 }
